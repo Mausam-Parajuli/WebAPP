@@ -1,0 +1,11 @@
+
+.age-warning {
+    display: block;
+    margin: 8px;
+    padding: 10px;
+    background-color: aliceblue;
+    color: rgb(233, 50, 50);
+    border-left: 4px solid red;
+    border-radius: 5px;
+    font-size: 14px;
+}

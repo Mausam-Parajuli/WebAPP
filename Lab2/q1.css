@@ -1,0 +1,21 @@
+
+.box {
+    width: 40vw;
+    height: 30vh;
+}
+
+.ContentBox {
+    box-sizing: content-box;
+    padding: 50px;
+    margin: 50px;
+    place-content: center;
+    background-color: rgb(255, 0, 200);
+}
+
+.BorderBox {
+    box-sizing: border-box;
+    /* border: 5px; */
+    padding: 50px;
+    margin: 50px;
+    background-color: rgb(0, 89, 255);
+}
