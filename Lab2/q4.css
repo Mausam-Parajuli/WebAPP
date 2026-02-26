@@ -1,0 +1,92 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f9;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;        
+  background-color: #333;
+  padding: 1rem;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.nav-item {
+  cursor: pointer;
+  padding: 5px 15px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;        
+  gap: 10px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+
+.flex-item {
+  padding: 20px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+}
+
+.grow { 
+  flex-grow: 2;   
+}
+
+.shrink { 
+  flex-shrink: 3; 
+  width: 300px;  
+}
+
+.basis { 
+  flex-basis: 250px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;        
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  flex: 1 1 250px;
+  max-width: 400px;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 450px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .card {
+    flex-basis: 100%;
+  }
+}

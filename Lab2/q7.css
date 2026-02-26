@@ -1,11 +1,50 @@
+body {
+    background: #3498db;
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+}
 
-.age-warning {
+.form-container {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+
+label {
     display: block;
-    margin: 8px;
+    margin-top: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border: 2px solid #3498db;
+}
+
+.warning {
+    display: none;
+    color: red;
+    font-size: 12px;
+}
+
+button {
+    width: 100%;
     padding: 10px;
-    background-color: aliceblue;
-    color: rgb(233, 50, 50);
-    border-left: 4px solid red;
-    border-radius: 5px;
-    font-size: 14px;
+    background: #3498db;
+    color: white;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2980b9;
 }

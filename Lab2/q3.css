@@ -1,0 +1,103 @@
+
+body{
+    width:100vw;
+    height:100vh;
+}
+.static
+{
+    background-color:rgb(251, 5, 5);
+    width:100vw;
+    height:50px;
+    padding: 1em;
+}
+.sticky
+{
+    background-color:rgb(53, 2, 238);
+    width:100vw;  
+    height:50px;   
+    padding: 1em;       
+    position:sticky;
+    color:white;
+    top:0;
+}
+.fixed
+{
+    width:100vw;
+    height:100px;
+    background-color:rgb(15, 137, 58);
+    font-size:20px;
+    font-weight:bold;
+    position:fixed;
+}
+.relative
+{
+    width:80vw;
+    height:200px;
+    left: 20px;
+    top: 20px;
+    background-color:lightblue;
+    position:relative;
+}
+.absolute
+{
+    position:absolute;
+    top:400px;
+    left:200px;
+    font-size:22px;
+    background-color: brown;
+    padding: 1em;
+}
+.display
+{
+    padding:10px;
+    color:white;
+    font-size:20px;
+    font-weight:500;
+}
+.block
+{
+    background-color:midnightblue;
+    display:block;
+    padding:10px;
+}
+.inline
+{
+    display:inline;
+    background-color:green;
+    padding:10px;
+}
+.inlineblock
+{
+    display:inline-block;
+    background-color:rgb(246, 255, 0);
+    padding:10px;
+    height: 30px;
+}
+.box1
+{
+    position: relative;
+    top: 10px;
+    left: 50px;
+    z-index: 1;
+    height: 30px;
+    background-color: aqua;
+}
+.box2
+{
+    position: relative;
+    top: 10px;
+    left: 80px;
+    z-index: 2; 
+    height: 30px;
+    background-color: rgb(240, 4, 4);
+}
+.overflow
+{
+    width:400px;
+    height:200px;
+    border:3px solid midnightblue;
+    margin:10px;     
+    overflow:auto;
+    /* overflow:hidden; */
+    /* overflow:scroll; */
+}

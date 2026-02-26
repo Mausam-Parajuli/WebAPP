@@ -1,21 +1,31 @@
 
+body {
+    background-color: brown;
+    justify-content: center;
+    text-align: center;
+}
+
 .box {
-    width: 40vw;
     height: 30vh;
 }
 
 .ContentBox {
     box-sizing: content-box;
+    width: 400px;
     padding: 50px;
     margin: 50px;
     place-content: center;
     background-color: rgb(255, 0, 200);
+    text-align: center;
 }
 
 .BorderBox {
     box-sizing: border-box;
-    /* border: 5px; */
+    width: 400px;
+    border: 5px dashed;
     padding: 50px;
     margin: 50px;
     background-color: rgb(0, 89, 255);
+    place-content: center;
+    text-align: center;
 }

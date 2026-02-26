@@ -1,0 +1,97 @@
+:root {
+  --main-color: royalblue;
+  --hover-color: darkblue;
+  --bg-color: #f40076;
+  --white: #16ee42;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.header::before {
+  content: "★ ";
+  color: orange;
+}
+
+.header::after {
+  content: " ★";
+  color: orange;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--white);
+  border: 2px solid var(--main-color);
+}
+
+.demo-box {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: var(--white);
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: var(--main-color);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--hover-color);
+  transform: scale(1.1);
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
+.input-field {
+  padding: 10px;
+  border: 2px solid gray;
+  transition: border-color 0.4s;
+}
+
+.input-field:focus {
+  border-color: var(--main-color);
+  outline: none;
+}
+
+.animation-container {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: myMove 3s infinite;
+}
+
+@keyframes myMove {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(180deg) scale(1.2); background-color: red; }
+  100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 600px) {
+  .demo-box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
