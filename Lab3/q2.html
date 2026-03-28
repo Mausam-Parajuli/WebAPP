@@ -1,0 +1,77 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q2</title>
+    <link rel="stylesheet" href="q2.css">
+</head>
+
+<body>
+
+<header>
+    Registration Form (Student / Teacher)
+</header>
+
+<main>
+<form onsubmit="return checkForm()">
+
+    Full Name:
+    <input type="text" id="fullname">
+    <br><br>
+
+    Username:
+    <input type="text" id="username">
+    <br><br>
+
+    Role:
+    <select id="role">
+        <option value=""></option>
+        <option>Student</option>
+        <option>Teacher</option>
+    </select>
+    <br><br>
+
+    Email:
+    <input type="email" id="email">
+    <br><br>
+
+    Password:
+    <input type="password" id="password">
+    <br><br>
+
+    Confirm Password:
+    <input type="password" id="confirmpass">
+    
+    <br><br>
+
+    Age:
+    <input type="number" id="age">
+    <br><br>
+
+    Gender:
+    <input type="radio" name="gender" value="m"> Male
+    <input type="radio" name="gender" value="f"> Female
+    <input type="radio" name="gender" value="o"> Other
+    <br><br>
+
+    Course:<br>
+    <select id="course">
+        <option>Web app progeaming</option>
+        <option>coa</option>
+        <option>data science</option>
+    </select>
+    <br><br>
+
+    <input type="checkbox" id="terms"> Accept terms
+    <br><br>
+
+    <input type="submit" value="Submit">
+
+</form>
+</main>
+
+<script src="q2.js"></script>
+</body>
+</html>
+

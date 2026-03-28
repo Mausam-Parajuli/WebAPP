@@ -1,0 +1,78 @@
+/* basic layout */
+.app-shell {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 15px;
+  font-family: Arial, sans-serif;
+}
+
+/* header */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 1.6rem;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* nav */
+.task-nav {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.task-nav a {
+  text-decoration: none;
+  padding: 6px 12px;
+  background: #ddd;
+  color: black;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+/* active link */
+.task-nav a.active {
+  background: #444;
+  color: white;
+}
+
+/* simple hover */
+.task-nav a:hover {
+  background: #bbb;
+}
+
+/* content area */
+main > div {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 6px;
+  background: #fdfdfd;
+}
+
+/* buttons */
+button {
+  padding: 6px 10px;
+  border: 1px solid #999;
+  background: #eee;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ddd;
+}
+
+/* inputs */
+input {
+  padding: 5px;
+  border: 1px solid #aaa;
+  margin-right: 5px;
+}

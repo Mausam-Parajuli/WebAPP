@@ -1,0 +1,46 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+}
+
+input {
+    padding: 6px;
+    margin-right: 8px;
+}
+
+button {
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+.delete-btn {
+    background-color: #f0f0f0;
+    color: #333;
+    border: none;
+    padding: 5px 10px;
+}
+

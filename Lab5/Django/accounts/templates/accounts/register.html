@@ -1,0 +1,35 @@
+{% extends "accounts/base.html" %}
+
+{% block title %}Register{% endblock %}
+
+{% block content %}
+    <h2>Register</h2>
+    <form method="post">
+        {% csrf_token %}
+        
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="1" required><br><br>
+        
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender" required>
+            <option value="">--Select--</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+        
+        <button type="submit">Register</button>
+    </form>
+{% endblock %}
